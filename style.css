@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  background-color: #4652b1;
+  height: 100px;
+  position: relative;
+}
+
+.container {
+  width: 500px;
+  height: 450px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+  box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.3);
+}
+
+.container > .title {
+  background-color: #4352b1;
+  height: 60px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-container {
+  margin-top: 55px;
+  margin-left: 50px;
+}
+
+#task-add {
+  color: #6577eb;
+  font-size: 0.8rem;
+}
+
+.todo-process {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container {
+  width: 65%;
+  margin-top: 10px;
+  border-bottom: 2px solid #6577eb;
+}
+
+.input-container input[type='text'] {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 22px;
+  font-size: 1rem;
+}
+
+.input-container input[type='text']:focus {
+  background-color: #e9effd;
+}
+
+button {
+  cursor: pointer;
+}
+
+#btn-add,
+#dlt-btn {
+  background-color: #4453b0;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 0 rgb(0, 0, 0, 0.4);
+}
+
+.task-present {
+  margin-top: 25px;
+  /* height: 170px; */
+}
+
+.task-present > .current-task {
+  width: 90%;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+}
+
+.current-task input[type='checkbox'] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.current-task label {
+  margin-left: 15px;
+  font-size: 0.9rem;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.current-task .remove-btn {
+  position: absolute;
+  left: 80%;
+  border: none;
+  background-color: #dd5781;
+  color: #ffffff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  line-height: 5px;
+}
+
+#dlt-btn {
+  background-color: #dd5781;
+}
